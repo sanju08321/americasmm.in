@@ -1,0 +1,6 @@
+{
+  "name": "AmericaSMM - The #1 SMM Panel",
+  "description": "AmericaSMM (americasmm.in) is the premier high-speed social media marketing reseller panel offering automated follower, like, view, and engagement services with instant API v2 integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

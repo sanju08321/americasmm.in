@@ -1,0 +1,416 @@
+import { SMMService } from '../types/smm';
+
+export const SMM_SERVICES: SMMService[] = [
+  // Instagram Services
+  {
+    id: 101,
+    category: 'Instagram',
+    name: 'Instagram Followers [Real Active - 365 Days Refill - Ultra Fast]',
+    ratePer1k: 0.82,
+    min: 50,
+    max: 500000,
+    avgTime: '15 Minutes',
+    refillDays: 365,
+    speed: '50K - 100K/Day',
+    guarantee: '365 Days Auto-Refill Guarantee',
+    startDelay: '0 - 15 Minutes',
+    description: 'High quality Instagram followers with genuine profile pictures and posts. Zero drop observed over 90 days. Works on public accounts only.'
+  },
+  {
+    id: 102,
+    category: 'Instagram',
+    name: 'Instagram Likes [Instant - 100% Non Drop - HQ Real Profiles]',
+    ratePer1k: 0.18,
+    min: 20,
+    max: 100000,
+    avgTime: '2 Minutes',
+    refillDays: 'Lifetime',
+    speed: '20K/Day',
+    guarantee: 'Lifetime Refill',
+    startDelay: 'Instant (1-3 min)',
+    description: 'Real Instagram likes from active accounts. Instant delivery starts within 120 seconds of order placement.'
+  },
+  {
+    id: 103,
+    category: 'Instagram',
+    name: 'Instagram Reels Views [Explore Feed Algorithm Boost - Ultra Speed]',
+    ratePer1k: 0.04,
+    min: 100,
+    max: 5000000,
+    avgTime: 'Instant',
+    refillDays: 'No Refill',
+    speed: '1M/Day',
+    guarantee: 'Non-Drop Service',
+    startDelay: 'Instant (0-1 min)',
+    description: 'Boost your Reels on the Instagram explore algorithm. High retention watch duration with genuine engagement metrics.'
+  },
+  {
+    id: 104,
+    category: 'Instagram',
+    name: 'Instagram Comments [Custom English / Emoji - Real User Profiles]',
+    ratePer1k: 4.50,
+    min: 10,
+    max: 10000,
+    avgTime: '25 Minutes',
+    refillDays: 30,
+    speed: '5K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '10 - 30 Minutes',
+    description: 'Enter one custom comment per line. Sent from verified or high-karma aged profiles with natural avatar photos.'
+  },
+  {
+    id: 105,
+    category: 'Instagram',
+    name: 'Instagram Story Views + Impressions + Reach [All Active Stories]',
+    ratePer1k: 0.12,
+    min: 100,
+    max: 200000,
+    avgTime: '5 Minutes',
+    refillDays: 'No Refill',
+    speed: '50K/Day',
+    guarantee: 'Full View Assurance',
+    startDelay: 'Instant',
+    description: 'Views delivered to all active stories currently posted on your target Instagram profile.'
+  },
+
+  // TikTok Services
+  {
+    id: 201,
+    category: 'TikTok',
+    name: 'TikTok Followers [Real Global - High Retention - 30D Refill]',
+    ratePer1k: 1.45,
+    min: 100,
+    max: 250000,
+    avgTime: '30 Minutes',
+    refillDays: 30,
+    speed: '25K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '10 - 20 Minutes',
+    description: 'High-quality TikTok profile followers. Natural delivery speed to prevent algorithm flags on growing creator profiles.'
+  },
+  {
+    id: 202,
+    category: 'TikTok',
+    name: 'TikTok Video Likes [Instant Start - Stable & High Quality]',
+    ratePer1k: 0.35,
+    min: 50,
+    max: 500000,
+    avgTime: '5 Minutes',
+    refillDays: 30,
+    speed: '50K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '0 - 5 Minutes',
+    description: 'Instant likes dispatched directly to your TikTok video link. Boosts initial FYP ranking potential.'
+  },
+  {
+    id: 203,
+    category: 'TikTok',
+    name: 'TikTok Video Views [Cheapest in Market - FYP Algorithm Trigger]',
+    ratePer1k: 0.015,
+    min: 500,
+    max: 10000000,
+    avgTime: 'Instant',
+    refillDays: 'No Refill',
+    speed: '5M/Day',
+    guarantee: 'Non-Drop Service',
+    startDelay: 'Instant (0-2 min)',
+    description: 'Ultra-cheap bulk TikTok views with high throughput. Perfect for resellers and viral promotion packages.'
+  },
+  {
+    id: 204,
+    category: 'TikTok',
+    name: 'TikTok Saves + Favorites + Shares [Engagement Triad]',
+    ratePer1k: 0.28,
+    min: 100,
+    max: 50000,
+    avgTime: '15 Minutes',
+    refillDays: 'No Refill',
+    speed: '20K/Day',
+    guarantee: 'Guaranteed Counts',
+    startDelay: '5 - 15 Minutes',
+    description: 'Combines saves, shares, and favorites to show high engagement signal to TikTok recommendation engine.'
+  },
+
+  // YouTube Services
+  {
+    id: 301,
+    category: 'YouTube',
+    name: 'YouTube Monetizable Watch Time [4000 Hours Package Eligible]',
+    ratePer1k: 6.80,
+    min: 500,
+    max: 20000,
+    avgTime: '24 Hours',
+    refillDays: 365,
+    speed: '500-1000 Hours/Day',
+    guarantee: '365 Days Refill & Monetization Safe',
+    startDelay: '1 - 6 Hours',
+    description: 'Designed specifically for channel monetization compliance. Requires at least one video longer than 60 minutes on the channel.'
+  },
+  {
+    id: 302,
+    category: 'YouTube',
+    name: 'YouTube High Retention Views [Suggested Videos & Search - Non Drop]',
+    ratePer1k: 1.15,
+    min: 500,
+    max: 1000000,
+    avgTime: '45 Minutes',
+    refillDays: 'Lifetime',
+    speed: '50K/Day',
+    guarantee: 'Lifetime Refill Guarantee',
+    startDelay: '15 - 45 Minutes',
+    description: 'Desktop and Mobile mixed viewers with 3 to 10+ minute retention duration. Monetization safe.'
+  },
+  {
+    id: 303,
+    category: 'YouTube',
+    name: 'YouTube Subscribers [Permanent Non-Drop - Organic Delivery Speed]',
+    ratePer1k: 11.50,
+    min: 50,
+    max: 20000,
+    avgTime: '3 Hours',
+    refillDays: 'Lifetime',
+    speed: '100-300/Day',
+    guarantee: 'Lifetime Guarantee',
+    startDelay: '1 - 3 Hours',
+    description: 'Aged Google accounts with human behavioral patterns. Drip-fed naturally to ensure zero algorithm drops.'
+  },
+  {
+    id: 304,
+    category: 'YouTube',
+    name: 'YouTube Likes [Instant - 100% Real - Lifetime Guarantee]',
+    ratePer1k: 0.95,
+    min: 50,
+    max: 100000,
+    avgTime: '10 Minutes',
+    refillDays: 'Lifetime',
+    speed: '10K/Day',
+    guarantee: 'Lifetime Refill',
+    startDelay: '5 - 15 Minutes',
+    description: 'Real user likes for any public YouTube video or Shorts link. Instant start.'
+  },
+
+  // Telegram Services
+  {
+    id: 401,
+    category: 'Telegram',
+    name: 'Telegram Channel Members [Zero Drop - Non-Drop - 60D Refill]',
+    ratePer1k: 0.65,
+    min: 100,
+    max: 200000,
+    avgTime: '10 Minutes',
+    refillDays: 60,
+    speed: '30K/Day',
+    guarantee: '60 Days Refill',
+    startDelay: '0 - 10 Minutes',
+    description: 'High-retention members for public or private Telegram channels. Minimal drop rate, instant start.'
+  },
+  {
+    id: 402,
+    category: 'Telegram',
+    name: 'Telegram Post Views [Instant - Last 10 Posts - Auto Speed]',
+    ratePer1k: 0.05,
+    min: 100,
+    max: 500000,
+    avgTime: 'Instant',
+    refillDays: 'No Refill',
+    speed: '100K/Hour',
+    guarantee: 'Instant View Assurance',
+    startDelay: '0 - 2 Minutes',
+    description: 'Dispatches views to your specified post link or channel latest updates immediately.'
+  },
+  {
+    id: 403,
+    category: 'Telegram',
+    name: 'Telegram Post Reactions [Positive / Fire / Thumbs Up Mix]',
+    ratePer1k: 0.22,
+    min: 50,
+    max: 50000,
+    avgTime: '5 Minutes',
+    refillDays: 'No Refill',
+    speed: '20K/Day',
+    guarantee: 'Permanent Reactions',
+    startDelay: '1 - 5 Minutes',
+    description: 'Adds emoji reactions to make your Telegram channel posts look active and trusted by real community members.'
+  },
+
+  // Twitter / X Services
+  {
+    id: 501,
+    category: 'Twitter',
+    name: 'Twitter (X) Followers [USA & Global Profiles - Bio & PFP Active]',
+    ratePer1k: 3.20,
+    min: 100,
+    max: 100000,
+    avgTime: '1 Hour',
+    refillDays: 30,
+    speed: '10K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '30 - 60 Minutes',
+    description: 'Aged profiles with profile pictures, banners, and tweets. Great for crypto, Web3, founders, and personal brands.'
+  },
+  {
+    id: 502,
+    category: 'Twitter',
+    name: 'Twitter (X) Retweets + Likes Bundle [Algorithmic Momentum]',
+    ratePer1k: 1.80,
+    min: 50,
+    max: 50000,
+    avgTime: '15 Minutes',
+    refillDays: 30,
+    speed: '15K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '5 - 15 Minutes',
+    description: 'Spreads your tweet to appear in the "For You" timeline of relevant interest categories.'
+  },
+  {
+    id: 503,
+    category: 'Twitter',
+    name: 'Twitter (X) Tweet Impressions & Views [Instant Fast Boost]',
+    ratePer1k: 0.03,
+    min: 500,
+    max: 10000000,
+    avgTime: 'Instant',
+    refillDays: 'No Refill',
+    speed: '2M/Day',
+    guarantee: 'Non-Drop Counter',
+    startDelay: '0 - 5 Minutes',
+    description: 'Increases the public view count metric displayed on any tweet.'
+  },
+
+  // Facebook Services
+  {
+    id: 601,
+    category: 'Facebook',
+    name: 'Facebook Page Likes + Followers [Worldwide Real Profiles]',
+    ratePer1k: 2.10,
+    min: 100,
+    max: 150000,
+    avgTime: '2 Hours',
+    refillDays: 60,
+    speed: '10K/Day',
+    guarantee: '60 Days Refill',
+    startDelay: '30 - 90 Minutes',
+    description: 'Increases both Page Likes and Followers simultaneously on business, creator, or community Facebook pages.'
+  },
+  {
+    id: 602,
+    category: 'Facebook',
+    name: 'Facebook Post Likes [Instant - Global Real Active Profiles]',
+    ratePer1k: 0.40,
+    min: 50,
+    max: 50000,
+    avgTime: '10 Minutes',
+    refillDays: 30,
+    speed: '20K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '5 - 15 Minutes',
+    description: 'Delivers likes on public Facebook photos, text updates, or video posts.'
+  },
+
+  // Spotify Services
+  {
+    id: 701,
+    category: 'Spotify',
+    name: 'Spotify Premium Track Plays [USA Targeted - Royalties Eligible]',
+    ratePer1k: 0.75,
+    min: 1000,
+    max: 1000000,
+    avgTime: '4 Hours',
+    refillDays: 'Lifetime',
+    speed: '20K - 50K/Day',
+    guarantee: 'Royalties Safe & Lifetime',
+    startDelay: '2 - 6 Hours',
+    description: 'High duration stream plays from Spotify Premium USA listeners. Track royalties eligible and algorithm friendly.'
+  },
+  {
+    id: 702,
+    category: 'Spotify',
+    name: 'Spotify Artist Monthly Listeners [30 Days Stable]',
+    ratePer1k: 0.90,
+    min: 500,
+    max: 200000,
+    avgTime: '12 Hours',
+    refillDays: 30,
+    speed: '10K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '6 - 12 Hours',
+    description: 'Boosts your public monthly listener count on Spotify artist page profiles.'
+  },
+
+  // Discord Services
+  {
+    id: 801,
+    category: 'Discord',
+    name: 'Discord Server Members [Online Active / Green Badge Status]',
+    ratePer1k: 4.90,
+    min: 50,
+    max: 10000,
+    avgTime: '30 Minutes',
+    refillDays: 30,
+    speed: '2K/Day',
+    guarantee: '30 Days Refill',
+    startDelay: '15 - 30 Minutes',
+    description: 'Members join your Discord server and remain in "Online" active status with randomized status messages.'
+  },
+
+  // Website Traffic
+  {
+    id: 901,
+    category: 'Website Traffic',
+    name: 'Website Traffic [USA Organic Google Search - 60s+ Avg Duration]',
+    ratePer1k: 0.55,
+    min: 1000,
+    max: 500000,
+    avgTime: '1 Hour',
+    refillDays: 'No Refill',
+    speed: '50K/Day',
+    guarantee: 'Google Analytics Trackable',
+    startDelay: '15 - 45 Minutes',
+    description: 'Direct organic referral traffic appearing on Google Analytics 4 (GA4). Low bounce rate with page navigation.'
+  }
+];
+
+export const INITIAL_ORDERS = [
+  {
+    orderId: 'AS-89412',
+    serviceId: 101,
+    serviceName: 'Instagram Followers [Real Active - 365 Days Refill]',
+    category: 'Instagram' as const,
+    link: 'https://instagram.com/miami_agency_official',
+    quantity: 10000,
+    charge: 8.20,
+    status: 'Completed' as const,
+    startCount: 14200,
+    remains: 0,
+    createdAt: 'Today, 09:14 AM',
+    refillEligible: true
+  },
+  {
+    orderId: 'AS-89455',
+    serviceId: 302,
+    serviceName: 'YouTube High Retention Views [Suggested Videos]',
+    category: 'YouTube' as const,
+    link: 'https://youtube.com/watch?v=k9Xm2P8LQw1',
+    quantity: 25000,
+    charge: 28.75,
+    status: 'In Progress' as const,
+    startCount: 3410,
+    remains: 6200,
+    createdAt: 'Today, 11:22 AM',
+    refillEligible: true
+  },
+  {
+    orderId: 'AS-89489',
+    serviceId: 203,
+    serviceName: 'TikTok Video Views [Cheapest in Market]',
+    category: 'TikTok' as const,
+    link: 'https://tiktok.com/@growthpulse/video/728192019',
+    quantity: 50000,
+    charge: 0.75,
+    status: 'Processing' as const,
+    startCount: 850,
+    remains: 32000,
+    createdAt: 'Today, 01:45 PM',
+    refillEligible: false
+  }
+];
